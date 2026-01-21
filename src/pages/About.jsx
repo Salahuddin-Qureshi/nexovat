@@ -91,7 +91,10 @@ const About = () => {
             {/* Values */}
             <section className="py-24 px-6">
                 <div className="max-w-7xl mx-auto text-center">
-                    <h2 className="text-3xl md:text-4xl font-bold text-white mb-16">Our Core Values</h2>
+                    <div className="flex items-center justify-center gap-4 mb-16">
+                        <span className="w-1.5 h-8 bg-gradient-to-b from-blue-500 to-purple-600 rounded-full"></span>
+                        <h2 className="text-3xl md:text-4xl font-bold text-white">Our Core Values</h2>
+                    </div>
                     <div className="grid md:grid-cols-4 gap-8 text-left">
                         {[
                             { title: "Innovation", desc: "We constantly challenge the status quo." },

@@ -1,4 +1,9 @@
+import { SiReact, SiNextdotjs, SiTypescript, SiTailwindcss, SiFlutter, SiNodedotjs, SiPython, SiKubernetes, SiPostgresql } from 'react-icons/si';
+
 import { Code, Server, Lightbulb, TrendingUp, Shield, Globe, Briefcase, Layers, Users, Zap, CheckCircle } from 'lucide-react';
+
+
+
 import Hero from '../components/Hero';
 import { motion } from 'framer-motion';
 import heroImage from '../assets/images/hero_tech.png';
@@ -297,30 +302,76 @@ const Home = () => {
             {/* Tech Stack Section - NEW */}
             <section className="py-24 bg-slate-900 border-t border-white/5 relative overflow-hidden">
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-blue-500/10 rounded-full blur-[100px]"></div>
-                <div className="max-w-7xl mx-auto px-6 relative z-10 text-center">
-                    <h2 className="text-3xl md:text-5xl font-bold mb-16 text-white">Powered by <span className="text-gradient">Modern Tech</span></h2>
+                <div className="max-w-7xl mx-auto px-6 relative z-10 text-center mb-16">
+                    <h2 className="text-3xl md:text-5xl font-bold text-white">Powered by <span className="text-gradient">Modern Tech</span></h2>
+                </div>
 
-                    {/* Tech Categories */}
-                    <div className="space-y-12">
-                        <div>
-                            <h3 className="text-gray-400 text-sm font-semibold tracking-wider uppercase mb-6">Frontend & Mobile</h3>
-                            <div className="flex flex-wrap justify-center gap-4">
-                                {['React', 'Next.js', 'TypeScript', 'Tailwind', 'Flutter', 'React Native'].map((tech) => (
-                                    <div key={tech} className="px-6 py-3 rounded-full bg-white/5 border border-white/10 text-gray-300 font-medium hover:border-blue-500/50 hover:bg-white/10 transition-all cursor-default">
-                                        {tech}
+                {/* Tech Scroller */}
+                <div className="space-y-12 relative z-10 overflow-hidden">
+
+                    {/* Frontend Row */}
+                    <div>
+                        <h3 className="text-center text-gray-400 text-sm font-semibold tracking-wider uppercase mb-8">Frontend & Mobile</h3>
+                        <div className="flex relative overflow-hidden w-full before:absolute before:left-0 before:top-0 before:z-10 before:h-full before:w-20 before:bg-gradient-to-r before:from-slate-900 before:to-transparent after:absolute after:right-0 after:top-0 after:z-10 after:h-full after:w-20 after:bg-gradient-to-l after:from-slate-900 after:to-transparent">
+                            <motion.div
+                                className="flex gap-8 whitespace-nowrap"
+                                animate={{ x: [0, -1000] }}
+                                transition={{
+                                    repeat: Infinity,
+                                    duration: 30,
+                                    ease: "linear"
+                                }}
+                            >
+                                {[...Array(2)].map((_, i) => (
+                                    <div key={i} className="flex gap-8">
+                                        {[
+                                            { name: 'React', icon: <SiReact className="text-[#61DAFB]" /> },
+                                            { name: 'Next.js', icon: <SiNextdotjs className="text-white" /> },
+                                            { name: 'TypeScript', icon: <SiTypescript className="text-[#3178C6]" /> },
+                                            { name: 'Tailwind CSS', icon: <SiTailwindcss className="text-[#06B6D4]" /> },
+                                            { name: 'Flutter', icon: <SiFlutter className="text-[#02569B]" /> },
+                                            { name: 'React Native', icon: <SiReact className="text-[#61DAFB]" /> },
+                                        ].map((tech, index) => (
+                                            <div key={index} className="flex items-center gap-3 px-8 py-4 rounded-full bg-white/5 border border-white/10 text-xl font-bold text-gray-300 backdrop-blur-sm min-w-[200px] justify-center">
+                                                <span className="text-3xl">{tech.icon}</span>
+                                                <span>{tech.name}</span>
+                                            </div>
+                                        ))}
                                     </div>
                                 ))}
-                            </div>
+                            </motion.div>
                         </div>
-                        <div>
-                            <h3 className="text-gray-400 text-sm font-semibold tracking-wider uppercase mb-6">Backend & Cloud</h3>
-                            <div className="flex flex-wrap justify-center gap-4">
-                                {['Node.js', 'Python', 'Go', 'AWS', 'Docker', 'Kubernetes', 'PostgreSQL'].map((tech) => (
-                                    <div key={tech} className="px-6 py-3 rounded-full bg-white/5 border border-white/10 text-gray-300 font-medium hover:border-purple-500/50 hover:bg-white/10 transition-all cursor-default">
-                                        {tech}
+                    </div>
+
+                    {/* Backend Row */}
+                    <div>
+                        <h3 className="text-center text-gray-400 text-sm font-semibold tracking-wider uppercase mb-8">Backend & Cloud</h3>
+                        <div className="flex relative overflow-hidden w-full before:absolute before:left-0 before:top-0 before:z-10 before:h-full before:w-20 before:bg-gradient-to-r before:from-slate-900 before:to-transparent after:absolute after:right-0 after:top-0 after:z-10 after:h-full after:w-20 after:bg-gradient-to-l after:from-slate-900 after:to-transparent">
+                            <motion.div
+                                className="flex gap-8 whitespace-nowrap"
+                                animate={{ x: [-1000, 0] }}
+                                transition={{
+                                    repeat: Infinity,
+                                    duration: 35,
+                                    ease: "linear"
+                                }}
+                            >
+                                {[...Array(2)].map((_, i) => (
+                                    <div key={i} className="flex gap-8">
+                                        {[
+                                            { name: 'Node.js', icon: <SiNodedotjs className="text-[#339933]" /> },
+                                            { name: 'Python', icon: <SiPython className="text-[#3776AB]" /> },
+                                            { name: 'Kubernetes', icon: <SiKubernetes className="text-[#326CE5]" /> },
+                                            { name: 'PostgreSQL', icon: <SiPostgresql className="text-[#4169E1]" /> },
+                                        ].map((tech, index) => (
+                                            <div key={index} className="flex items-center gap-3 px-8 py-4 rounded-full bg-white/5 border border-white/10 text-xl font-bold text-gray-300 backdrop-blur-sm min-w-[200px] justify-center">
+                                                <span className="text-3xl">{tech.icon}</span>
+                                                <span>{tech.name}</span>
+                                            </div>
+                                        ))}
                                     </div>
                                 ))}
-                            </div>
+                            </motion.div>
                         </div>
                     </div>
                 </div>

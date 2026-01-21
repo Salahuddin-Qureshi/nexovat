@@ -14,7 +14,10 @@ const Contact = () => {
 
                     {/* Contact Info */}
                     <div>
-                        <h2 className="text-3xl font-bold text-white mb-8">Get in Touch</h2>
+                        <h2 className="text-3xl font-bold text-white mb-8 flex items-center gap-3">
+                            <span className="w-1.5 h-8 bg-gradient-to-b from-blue-500 to-purple-600 rounded-full shrink-0"></span>
+                            Get in Touch
+                        </h2>
                         <div className="space-y-8">
                             <div className="flex items-start gap-6">
                                 <div className="w-12 h-12 bg-blue-500/20 rounded-full flex items-center justify-center text-blue-400 shrink-0">
@@ -22,7 +25,7 @@ const Contact = () => {
                                 </div>
                                 <div>
                                     <h3 className="text-lg font-semibold text-white mb-1">Our Office</h3>
-                                    <p className="text-gray-400">Technology Park, Islamabad<br />Pakistan</p>
+                                    <p className="text-gray-400">Technology Park, Sukkur, Sindh<br />Pakistan</p>
                                 </div>
                             </div>
 
@@ -32,7 +35,7 @@ const Contact = () => {
                                 </div>
                                 <div>
                                     <h3 className="text-lg font-semibold text-white mb-1">Call Us</h3>
-                                    <p className="text-gray-400">+92 300 1234567<br />Mon - Fri, 9am - 6pm</p>
+                                    <p className="text-gray-400">+92 311 3588345<br />Mon - Fri, 9am - 6pm</p>
                                 </div>
                             </div>
 
@@ -71,7 +74,10 @@ const Contact = () => {
 
                     {/* Contact Form */}
                     <div className="glass p-10 rounded-3xl border border-white/10">
-                        <h3 className="text-2xl font-bold text-white mb-6">Send us a Message</h3>
+                        <h3 className="text-2xl font-bold text-white mb-6 flex items-center gap-3">
+                            <span className="w-1.5 h-6 bg-gradient-to-b from-purple-500 to-blue-600 rounded-full shrink-0"></span>
+                            Send us a Message
+                        </h3>
                         <form className="space-y-6">
                             <div className="grid md:grid-cols-2 gap-6">
                                 <div>

@@ -38,6 +38,7 @@ const Footer = () => {
                         <ul className="space-y-4">
                             <li><Link to="/about" className="text-gray-400 hover:text-blue-400 transition-colors">About Us</Link></li>
                             <li><Link to="/services" className="text-gray-400 hover:text-blue-400 transition-colors">Services</Link></li>
+                            <li><Link to="/portfolio" className="text-gray-400 hover:text-blue-400 transition-colors">Portfolio</Link></li>
                             <li><Link to="/careers" className="text-gray-400 hover:text-blue-400 transition-colors">Careers</Link></li>
                             <li><Link to="/contact" className="text-gray-400 hover:text-blue-400 transition-colors">Contact</Link></li>
                         </ul>
@@ -60,11 +61,11 @@ const Footer = () => {
                         <ul className="space-y-4">
                             <li className="flex items-start gap-3 text-gray-400">
                                 <MapPin className="w-5 h-5 text-blue-500 shrink-0 mt-1" />
-                                <span>Technology Park, Islamabad, Pakistan</span>
+                                <span>Technology Park, Sukkur, Sindh, Pakistan</span>
                             </li>
                             <li className="flex items-center gap-3 text-gray-400">
                                 <Phone className="w-5 h-5 text-blue-500 shrink-0" />
-                                <span>+92 300 1234567</span>
+                                <span>+92 311 3588345</span>
                             </li>
                             <li className="flex items-center gap-3 text-gray-400">
                                 <Mail className="w-5 h-5 text-blue-500 shrink-0" />
@@ -76,11 +77,11 @@ const Footer = () => {
 
                 <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
                     <p className="text-gray-500 text-sm">
-                        &copy; {new Date().getFullYear()} NEXOVAT (Private) Limited. All rights reserved.
+                        &copy; 2026 NEXOVAT (Private) Limited. All rights reserved.
                     </p>
                     <div className="flex gap-6 text-sm text-gray-500">
-                        <a href="#" className="hover:text-white">Privacy Policy</a>
-                        <a href="#" className="hover:text-white">Terms of Service</a>
+                        <Link to="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</Link>
+                        <Link to="/terms-of-service" className="hover:text-white transition-colors">Terms of Service</Link>
                     </div>
                 </div>
             </div>

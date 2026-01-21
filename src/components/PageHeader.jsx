@@ -11,7 +11,7 @@ const PageHeader = ({ title, subtitle }) => {
                 <motion.h1
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
-                    className="text-4xl md:text-6xl font-bold text-white mb-6"
+                    className="text-4xl md:text-6xl font-extrabold tracking-tight text-transparent bg-clip-text bg-gradient-to-br from-white via-white to-blue-200 mb-6 drop-shadow-sm"
                 >
                     {title}
                 </motion.h1>
