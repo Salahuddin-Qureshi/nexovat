@@ -6,6 +6,7 @@ import pitpDashboardImg from '../assets/images/PITP Dashbaord.png';
 import propertyManagementImg from '../assets/images/Property Managemet System.png';
 import sukkurAcademyImg from '../assets/images/The Sukkur Academy.png';
 import vailAirImg from '../assets/images/Vail Air.png';
+import teamInnovationImg from '../assets/images/team_innovation.png';
 
 export const projects = [
     {
@@ -145,5 +146,157 @@ export const projects = [
         tags: ["Travel", "Booking"],
         techStack: [{ name: "React", type: "Frontend" }],
         gallery: [vailAirImg]
+    },
+    {
+        id: "preventing-violent-extremism",
+        title: "Preventing Violent Extremism",
+        category: "Social Impact",
+        description: "Empowering youth and females in Sindh and Baluchistan through entrepreneurship and soft skills.",
+        fullDescription: "Funded by the EU and implemented in coordination with UNODC and NACTA Pakistan, this project focuses on preventing violent extremism by empowering youth and women. The initiative provides training in entrepreneurship, soft skills, and future job skills to foster economic independence and social cohesion.",
+        challenge: "Vulnerable youth and women in Sindh and Baluchistan face limited economic opportunities, making them more susceptible to extremist narratives.",
+        solution: "We implemented a comprehensive capacity-building program focusing on entrepreneurship and soft skills to provide viable economic alternatives and positive community engagement.",
+        results: [
+            "Empowered youth and women across Sindh and Baluchistan.",
+            "Delivered training on future job skills.",
+            "Strengthened community resilience against extremism."
+        ],
+        image: teamInnovationImg,
+        tags: ["Social Impact", "UNODC", "Youth Empowerment"],
+        techStack: [
+            { name: "Entrepreneurship", type: "Skill" },
+            { name: "Soft Skills", type: "Skill" },
+            { name: "Future Job Skills", type: "Skill" }
+        ],
+        gallery: [teamInnovationImg]
+    },
+    {
+        id: "youth-eco-development",
+        title: "Youth Eco-Development",
+        category: "Green Entrepreneurship",
+        description: "Training and incubation for eco-friendly business ventures in the Mirpurkhas Region.",
+        fullDescription: "This project identifies youth from the Mirpurkhas Region to provide trainings and incubation for venture plan development. It enables them to design eco-friendly business ideas addressing climate change.",
+        challenge: "Climate change poses a significant threat, and there is a need to engage youth in sustainable economic activities.",
+        solution: "A targeted incubation program that equips youth with the skills to launch green enterprises.",
+        results: [
+            "Conducted multiple training sessions.",
+            "Incubated eco-friendly venture plans.",
+            "Addressed local climate change issues through business."
+        ],
+        image: teamInnovationImg,
+        tags: ["Green Tech", "Entrepreneurship", "Climate Change"],
+        techStack: [
+            { name: "Entrepreneurship", type: "Skill" },
+            { name: "Incubation", type: "Process" }
+        ],
+        gallery: [teamInnovationImg]
+    },
+    {
+        id: "unicef-sta-deep",
+        title: "UNICEF - STA-DEEP",
+        category: "Education Development",
+        description: "Capacity development monitoring & evaluation for the Sindh Technical Assistance.",
+        fullDescription: "As Team Lead for the European Union’s STA-DEEP Project awarded by UNICEF to EDC Sukkur IBA University, this project focuses on capacity development, monitoring & evaluation frameworks, and enhancing education programs.",
+        challenge: "The educational sector in Sindh requires robust technical assistance and monitoring to ensure effective delivery of development goals.",
+        solution: "Development and delivery of technical assistance frameworks and capacity building modules.",
+        results: [
+            "Enhanced monitoring & evaluation frameworks.",
+            "Delivered extensive capacity development training.",
+            "Supported EU and UNICEF education goals."
+        ],
+        image: teamInnovationImg,
+        tags: ["UNICEF", "Education", "Analysis"],
+        techStack: [
+            { name: "Research", type: "Skill" },
+            { name: "Analysis", type: "Skill" },
+            { name: "Project Management", type: "Skill" }
+        ],
+        gallery: [teamInnovationImg]
+    },
+    {
+        id: "regional-youth-digital-skills",
+        title: "Regional Youth Digital Skills",
+        category: "Research & Policy",
+        description: "Evaluating digital skill gaps among youth in South and East Asia for the Commonwealth Secretariat.",
+        fullDescription: "Led a project awarded by the Commonwealth Secretariat to evaluate digital skill gaps among youth in South and East Asia. The project suggested strategies and programs for digital skills development to bridge the divide.",
+        challenge: "Rapid digitalization has left gaps in youth skills in South and East Asia, requiring evidence-based strategies to address them.",
+        solution: "conducted a comprehensive evaluation of skill gaps and formulated strategic recommendations for policymakers.",
+        results: [
+            "Mapped digital skill gaps across the region.",
+            "Proposed actionable strategies for skills development.",
+            "Informed policy for the Commonwealth Secretariat."
+        ],
+        image: teamInnovationImg,
+        tags: ["Research", "Policy", "Digital Skills"],
+        techStack: [
+            { name: "Research", type: "Skill" },
+            { name: "Analysis", type: "Skill" },
+            { name: "Proposal Writing", type: "Skill" }
+        ],
+        gallery: [teamInnovationImg]
+    },
+    {
+        id: "guesss-pakistan",
+        title: "GUESSS Pakistan",
+        category: "Research Lead",
+        description: "Leading the Pakistani segment of the Global University Entrepreneurial Spirit Student Survey.",
+        fullDescription: "As Country Representative/Team Lead, led the Pakistani segment of GUESSS in collaboration with Sukkur IBA University and partner universities. Responsible for developing national insights into student entrepreneurship.",
+        challenge: "Understanding the entrepreneurial spirit and intentions of students on a national scale.",
+        solution: "Coordinated a large-scale survey and analysis effort across multiple universities.",
+        results: [
+            "Successfully led the national survey segment.",
+            "Collaborated with partner universities.",
+            "Generated key insights for entrepreneurship education."
+        ],
+        image: teamInnovationImg,
+        tags: ["Research", "Entrepreneurship", "Survey"],
+        techStack: [
+            { name: "Research", type: "Skill" },
+            { name: "Analysis", type: "Skill" },
+            { name: "Project Management", type: "Skill" }
+        ],
+        gallery: [teamInnovationImg]
+    },
+    {
+        id: "teacher-training-project",
+        title: "4000 School Teacher Training",
+        category: "Education Training",
+        description: "Training 4,000 teachers in Science, English, Math, and Social Studies.",
+        fullDescription: "Headed the EDC and Sindh Education Foundation initiative to train 4,000 teachers in Science, English, Math, and Social Studies, effectively strengthening content knowledge and pedagogical skills.",
+        challenge: "Improving the quality of education requires large-scale upskilling of teachers in core subjects.",
+        solution: "Designed and executed a massive training program covering 4,000 teachers.",
+        results: [
+            "Trained 4,000 teachers.",
+            "Enhanced pedagogical skills.",
+            "Strengthened content knowledge in core subjects."
+        ],
+        image: teamInnovationImg,
+        tags: ["Training", "Education", "Capacity Building"],
+        techStack: [
+            { name: "Training", type: "Skill" },
+            { name: "Project Management", type: "Skill" },
+            { name: "Pedagogy", type: "Skill" }
+        ],
+        gallery: [teamInnovationImg]
+    },
+    {
+        id: "research-excellence-framework",
+        title: "Research Excellence Framework",
+        category: "Higher Education Policy",
+        description: "Developing a Research Excellence Framework (REF) for HEC Pakistan.",
+        fullDescription: "This project aims to develop a Research Excellence Framework (REF) for Pakistan's Higher Education Commission (HEC) in collaboration with experts. It focuses on research evaluation and policy improvement.",
+        challenge: "Establishing a standardized and effective framework for evaluating research excellence in Pakistan.",
+        solution: "Collaborative development of the REF with international experts and local stakeholders.",
+        results: [
+            "Developing the REF for HEC Pakistan.",
+            "Collaboration with British Council.",
+            "Setting standards for research evaluation."
+        ],
+        image: teamInnovationImg,
+        tags: ["Policy", "Research", "HEC"],
+        techStack: [
+            { name: "Research", type: "Skill" },
+            { name: "Policy Making", type: "Skill" }
+        ],
+        gallery: [teamInnovationImg]
     }
 ];

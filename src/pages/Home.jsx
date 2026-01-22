@@ -382,17 +382,35 @@ const Home = () => {
                 <div className="max-w-7xl mx-auto px-6">
                     <h2 className="text-3xl md:text-5xl font-bold mb-16 text-center text-white">What Our <span className="text-blue-500">Clients Say</span></h2>
                     <div className="grid md:grid-cols-3 gap-8">
-                        {[1, 2, 3].map((item) => (
-                            <div key={item} className="glass p-8 rounded-2xl relative group">
+                        {[
+                            {
+                                text: "The Sindh Government has praised the PITP project, recommending it as a benchmark for others to build similar robust and effective systems.",
+                                author: "Government of Sindh",
+                                role: "Official Statement"
+                            },
+                            {
+                                text: "A rare team that not only understands the language of modern project administration but also executes it effectively. Known for their integrity and ability to manage multiple project elements seamlessly.",
+                                author: "Rowan Bosworth-Davies",
+                                role: "Financial Crime Expert Consultant"
+                            },
+                            {
+                                text: "The Property Management System developed for our Dubai operations has streamlined our workflow significantly. Exceptional quality and support throughout the process.",
+                                author: "Real Estate Client",
+                                role: "Dubai Property Managemnet"
+                            }
+                        ].map((testimonial, index) => (
+                            <div key={index} className="glass p-8 rounded-2xl relative group">
                                 <div className="absolute -top-4 -left-4 text-6xl text-blue-500/20 font-serif">"</div>
                                 <p className="text-gray-300 mb-6 relative z-10 italic">
-                                    "The team at NEXOVAT delivered beyond our expectations. Their attention to detail and ability to translate our vision into reality was impressive."
+                                    "{testimonial.text}"
                                 </p>
                                 <div className="flex items-center gap-4">
-                                    <div className="w-12 h-12 rounded-full bg-gradient-to-tr from-blue-500 to-purple-500"></div>
+                                    <div className="w-12 h-12 rounded-full bg-gradient-to-tr from-blue-500 to-purple-500 flex items-center justify-center text-xl font-bold text-white">
+                                        {testimonial.author[0]}
+                                    </div>
                                     <div>
-                                        <h4 className="text-white font-semibold">Client Name</h4>
-                                        <p className="text-sm text-gray-500">CEO, Tech Company</p>
+                                        <h4 className="text-white font-semibold">{testimonial.author}</h4>
+                                        <p className="text-sm text-gray-500">{testimonial.role}</p>
                                     </div>
                                 </div>
                             </div>
